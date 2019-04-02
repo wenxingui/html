@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script>
+
+        $(function () {
+            // 从div对象找出包含p标签的div
+            var div01 = $('div').has('p')
+            console.log(div01);
+            var div02 = $('div').has('.p1')
+            console.log(div02);
+
+
+            // 所有的div中排除 .div03的
+            var divo1 = $('div').not('.div03')
+            console.log(divo1);
+
+             // 所有的div中排除 .div03和.div04的div
+            var divo2 = $('div').not('.div03,.div04')
+            console.log(divo2);
+
+
+        })
+
+    </script>
+
+</head>
+
+<body>
+
+
+    <div class="div00"><a href="">1111</a></div>
+    <div class="div01">
+        <p>ppppp11111111</p>
+    </div>
+    <div class="div02">
+        <p class="p1">ppppp2222222s</p>
+    </div>
+    <div class="div03"><span>spanspan</span></div>
+    <div class="div04">124546</div>
+
+
+</body>
+
+</html>
